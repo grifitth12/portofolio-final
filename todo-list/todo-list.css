@@ -1,0 +1,111 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(120deg, #89f7fe, #66a6ff);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    min-height: 100vh;
+  }
+
+  .container {
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+  }
+
+  .header {
+    background-color: #0d6efd;
+    color: white;
+    padding: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-size: 26px;
+    font-weight: bold;
+  }
+
+  .input-section {
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .input-section input {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+
+  .input-section button {
+    padding: 12px 20px;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .input-section button:hover {
+    background-color: #0056d2;
+  }
+
+  .task-list {
+    padding: 0 20px 20px;
+  }
+
+  .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f3f5;
+    padding: 12px 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+
+  .task.completed .task-text {
+    text-decoration: line-through;
+    color: #888;
+  }
+
+  .task-buttons button {
+    margin-left: 5px;
+    padding: 6px 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 6px;
+  }
+
+  .done-btn {
+    background-color: #28a745;
+  }
+
+  .delete-btn {
+    background-color: #dc3545;
+  }
+
+  .toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #000000cc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 1000;
+  }
+
+  .toast.show {
+    opacity: 1;
+  }

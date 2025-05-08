@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Alvin Rizky</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav aria-label="primary navigation">
+             <div class="logo" tabindex="0">My <span class="highlight">Portfolio</span></div>
+                
+             <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+             </div>
+             <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#project" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#" id="theme-toggle" class="nav-link"><i class="fas fa-moon"></i></a></li>
+             </ul>
+            </nav>
+        </div>
+    </header>
+
+   <!-- Hero Section -->
+   <section class="hero" id="hero">
+    <div class="container">
+        <div class="hero-content" data-aos="fade-up">
+            <div class="hero-text">
+                <h1 class="typing-text">Alvin Rizky</h1>
+                <p class="subtitle">Web Developer & Student</p>
+                <div class="cta-buttons">
+                    <a href="#project" class="btn primary-btn">View Projects</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-container">
+                    <!-- Ganti logo dengan foto kamu -->
+                    <div class="profile-circle">
+                        <img src="source/Fate Stay Saber.jpeg" alt="Alvin Rizky" class="profile-img" />
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://github.com/grifitth12" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.youtube.com/@alvinrizky6830" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/allvinrizky_?igsh=dGw4Ym84MmRwdGtp" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://discord.com/users/1270375691099045953" target="_blank"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <main class="container" tabindex="0">
+
+    <!-- about section-->
+    <section id="about" class="about-me" aria-label="About me section" data-aos="fade-up">
+        <h2><i class="fas fa-user"></i> About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    👋 Hallo bro, saya <strong class="highlight">Alvin Rizky</strong>
+                </p>
+                <p>
+                    Selamat datang di situs web portofolio pribadi saya! Saya adalah seorang <strong> Murid di SMK PLUS PELITA NUSANTARA</strong>
+                    yang senang membuat aplikasi web menggunakan <strong>HTML, CSS, dan Javascript</strong>
+                </p>
+                <p>
+                    Saya percaya bahwa teknologi adalah alat yang penting untuk membangun masa depan pendidikan yang cerah.
+                </p>
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <span class="stat-number" id="projects-completed">3</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="happy-clients">10</span>
+                        <span class="stat-label">Clients</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="coffee-cups">247</span>
+                        <span class="stat-label">Coffee</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills -->
+    <section id="skills" aria-label="skills section" data-aos="fade-up">
+        <h2><i class="fas fa-lightbulb"></i> My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Front-End</h3>
+                <div class="skills-list" role="list">
+                    <div class="skill-with-progress" role="listitem">
+                        <div class="skill-header">
+                            <span class="skill"><i class="fab fa-html5"></i> HTML5</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-with-progress" role="listitem">
+                        <div class="skill-header">
+                            <span class="skill"><i class="fab fa-css3-alt"></i> CSS3</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-with-progress" role="listitem">
+                        <div class="skill-header">
+                            <span class="skill"><i class="fab fa-js"></i> JavaScript</span>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Tools & Others</h3>
+                <div class="skills-list" role="list">
+                    <div class="skill-with-progress" role="listitem">
+                        <div class="skill-header">
+                            <span class="skill"><i class="fas fa-mobile-alt"></i> Responsive Design</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-with-progress" role="listitem">
+                        <div class="skill-header">
+                            <span class="skill"><i class="fab fa-git-alt"></i> Git & GitHub</span>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- project -->
+    <section id="project" aria-label="project section" data-aos="fade-up">
+        <h2><i class="fas fa-rocket"></i> My Projects</h2>
+        <div class="project-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="app">Apps</button>
+            <button class="filter-btn" data-filter="other">Other</button>
+        </div>
+        <div class="project-list">
+            <article class="project-item" data-category="web" data-aos="zoom-in">
+                <div class="project-image">
+                    <img src="source/Screenshot 2025-05-08 224033.png" alt="Portfolio Website Preview">
+                    <div class="project-overlay">
+                        <div class="overlay-content">
+                            <a href="#" class="view-project" target="_blank"><i class="fas fa-external-link-alt"></i> View Project</a>
+                            <a href="#" class="view-code" target="_blank"><i class="fas fa-code"></i> View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>🎯 Portfolio Website</h3>
+                    <p>
+                        Website yang menampilkan profil, keterampilan, dan proyek. Dibangun menggunakan HTML, CSS, dan Javascript
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-item" data-category="app" data-aos="zoom-in" data-aos-delay="100">
+                <div class="project-image">
+                    <img src="source/Screenshot 2025-05-08 222142.png" alt="To-Do List App Preview">
+                    <div class="project-overlay">
+                        <div class="overlay-content">
+                            <a href="todo-list/todo-list.html" class="view-project" target="_blank"><i class="fas fa-external-link-alt"></i> View Project</a>
+                            <a href="todo-list/todo-list.html" class="view-code" target="_blank"><i class="fas fa-code"></i> View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>📝 To-Do List App</h3>
+                    <p>
+                        Aplikasi daftar tugas interaktif untuk menambah, menghapus, dan menandai tugas sebagai selesai
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-item" data-category="other" data-aos="zoom-in" data-aos-delay="200">
+                <div class="project-image">
+                    <img src="source/Screenshot 2025-05-08 222907.png" alt="Quiz Game Preview">
+                    <div class="project-overlay">
+                        <div class="overlay-content">
+                            <a href="quiz/index.html" class="view-project" target="_blank"><i class="fas fa-external-link-alt"></i> View Project</a>
+                            <a href="quiz/index.html" class="view-code" target="_blank"><i class="fas fa-code"></i> View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>❓ Quiz Game</h3>
+                    <p>
+                        Game kuis sederhana dengan pertanyaan pilihan ganda dan sistem penilaian. Dibuat dengan Javascript.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </article>
+        </div>  
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials" data-aos="fade-up">
+        <h2><i class="fas fa-comments"></i> Testimonials</h2>
+        <div class="testimonial-container">
+            <div class="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>Alvin adalah pengembang web yang berbakat dengan keahlian teknis yang luar biasa. Sangat merekomendasikan!</p>
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Akeno</h4>
+                                <p>Project Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>Berkat Alvin, website kami kini lebih profesional dan modern. Dia bekerja cepat dan hasilnya sangat memuaskan!</p>
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Chinatsu</h4>
+                                <p>Small Business Owner</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>Proyek quiz game yang dikembangkan Alvin sangat interaktif dan menarik. Semua fitur berfungsi dengan sempurna!</p>
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Elaina</h4>
+                                <p>Education Specialist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="testimonial-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact" aria-label="contact section" data-aos="fade-up">
+        <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Jakarta, Indonesia</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>alvinr120409@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>(+62) 813-9803-6877</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/grifitth12" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.youtube.com/@alvinrizky6830" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/allvinrizky_?igsh=dGw4Ym84MmRwdGtp" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://discord.com/users/1270375691099045953" target="_blank"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+            <form id="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Nama Lengkap</label>
+                    <input type="text" id="name" name="name" placeholder="Nama anda" aria-label="Nama anda" required />
+                    <div class="error" id="name-error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email anda" aria-label="Email anda" required />
+                    <div class="error" id="email-error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject pesan" aria-label="Subject pesan" required />
+                    <div class="error" id="subject-error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Pesan</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Tulis pesan anda..." aria-label="Pesan anda" required></textarea>
+                    <div class="error" id="message-error"></div>
+                </div>
+
+                <button type="submit" aria-label="Kirim pesan" class="submit-btn">
+                    <span class="btn-text">📨 Kirim Pesan</span>
+                    <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                </button>
+                <p class="success-msg" id="success-msg" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <h3>Alvin <span class="highlight">Rizky</span></h3>
+                <p>Web Developer & Student</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Stay Updated</h4>
+                <p>Subscribe to my newsletter</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Your email">
+                    <button><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Alvin Rizky - SMK PLUS PELITA NUSANTARA</p>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/allvinrizky_?igsh=dGw4Ym84MmRwdGtp"><i class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/@alvinrizky6830"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/allvinrizky_?igsh=dGw4Ym84MmRwdGtp"><i class="fab fa-instagram"></i></a>
+                <a href="https://discord.com/users/1270375691099045953"><i class="fab fa-discord"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Back to top button -->
+<button id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- Loading spinner -->
+<div class="loading-spinner" id="loading-spinner">
+    <div class="spinner"></div>
+</div>
+
+<!-- Script sources -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

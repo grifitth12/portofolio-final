@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kuis Sederhana</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      background: #f0f8ff;
+    }
+    .quiz-container {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .question {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    button.option-btn {
+      padding: 10px;
+      border: none;
+      background-color: #e0e0e0;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button.option-btn:hover {
+      background-color: #b2dfdb;
+    }
+    #score {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="quiz-container">
+  <div id="quiz">
+    <div class="question" id="question">Loading...</div>
+    <div class="options" id="options"></div>
+    <div id="score"></div>
+  </div>
+</div>
+
+<script>
+  const questions = [
+    {
+      question: "Apa ibukota Indonesia?",
+      options: ["Jakarta", "Bandung", "Surabaya", "Yogyakarta"],
+      answer: "Jakarta"
+    },
+    {
+      question: "Siapa presiden pertama Indonesia?",
+      options: ["Soekarno", "Soeharto", "Jokowi", "Habibie"],
+      answer: "Soekarno"
+    },
+    {
+      question: "2 + 2 = ?",
+      options: ["3", "4", "5", "2"],
+      answer: "4"
+    }
+  ];
+
+  let currentQuestion = 0;
+  let score = 0;
+
+  function loadQuestion() {
+    if (currentQuestion >= questions.length) {
+      document.getElementById("quiz").innerHTML = `<h2>Skor akhir kamu: ${score}/${questions.length}</h2>`;
+      return;
+    }
+
+    const q = questions[currentQuestion];
+    document.getElementById("question").innerText = q.question;
+
+    const optionsContainer = document.getElementById("options");
+    optionsContainer.innerHTML = "";
+
+    q.options.forEach(option => {
+      const btn = document.createElement("button");
+      btn.classList.add("option-btn");
+      btn.innerText = option;
+      btn.onclick = () => {
+        if (option === q.answer) {
+          score++;
+        }
+        currentQuestion++;
+        loadQuestion();
+      };
+      optionsContainer.appendChild(btn);
+    });
+
+    document.getElementById("score").innerText = `Skor: ${score}`;
+  }
+
+  loadQuestion();
+</script>
+
+</body>
+</html>
